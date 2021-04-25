@@ -19,6 +19,10 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+#header-fixed {
+    display: none;
+}
+
 header {
     width: 100%;
     height: 40px;
@@ -58,6 +62,19 @@ nav ul li a:hover {
     background-color: #ccc;
     color: #222;
 }
+#desktop-menu {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around
+}
+#mobile-menu {
+    display: none;
+}
+
+.fas.fa-bars {
+    display: none;
+}
 
 #home {
     position: absolute;
@@ -67,7 +84,7 @@ nav ul li a:hover {
     background-repeat: repeat-y;
     width: 100%;
     max-width: 100vw;
-    height: 500%;
+    height: 450%;
     z-index: -1;
 }
 .container {
@@ -216,15 +233,11 @@ h3 {
     width: 100%;
 }
 
-.potd-box {
-    width: 60%;
-}
-
 .potd-header {
     background-color: #222;
-    width: 800px;
-    height: 40px;
-    padding: 2px 20px;
+    max-width: 800px;
+    height: auto;
+    padding: 8px 20px;
     display: flex;
     align-items: center;
     color: white;
@@ -233,7 +246,7 @@ h3 {
 }
 
 .potd-content {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     box-sizing: border-box;
     background-color: floralwhite;
@@ -281,7 +294,7 @@ h3 {
 }
 
 .hidden {
-    visibility: hidden;
+    display: none;
 }
 
 /* =============== LIGHT PARTY =================== */
@@ -301,14 +314,14 @@ h3 {
 }
 
 .light-box {
-    width: 60%;
+    margin: auto;
 }
 
 .light-header {
     background-color:rgb(218, 161, 19);
-    width: 800px;
-    height: 40px;
-    padding: 2px 20px;
+    max-width: 800px;
+    height: auto;
+    padding: 8px 20px;
     display: flex;
     align-items: center;
     color: #222;
@@ -317,7 +330,7 @@ h3 {
 }
 
 .light-content {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     box-sizing: border-box;
     background-color: floralwhite;
@@ -381,12 +394,12 @@ h3 {
 }
 
 .full-box {
-    width: 60%;
+    margin: auto;
 }
 
 .full-header {
     background-color: rgb(22, 157, 190);
-    width: 800px;
+    max-width: 800px;
     height: 40px;
     padding: 2px 20px;
     display: flex;
@@ -397,7 +410,7 @@ h3 {
 }
 
 .full-content {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     box-sizing: border-box;
     background-color: floralwhite;
@@ -461,14 +474,14 @@ h3 {
 }
 
 .alliance-box {
-    width: 60%;
+    margin: auto;
 }
 
 .alliance-header {
-    background-color: rgb(194, 67, 233);
-    width: 800px;
-    height: 40px;
-    padding: 2px 20px;
+    background-color: rgb(75, 209, 109);
+    max-width: 800px;
+    height: auto;
+    padding: 8px 20px;
     display: flex;
     align-items: center;
     color: #222;
@@ -477,7 +490,7 @@ h3 {
 }
 
 .alliance-content {
-    width: 800px;
+    max-width: 800px;
     margin: auto;
     box-sizing: border-box;
     background-color: floralwhite;
@@ -515,12 +528,12 @@ h3 {
     padding: 14px 20px;
     border: none;
     outline: none;
-    background-color: rgb(194, 27, 172);
+    background-color: rgb(59, 179, 109);
     transition: 0.2s ease all;
     cursor: pointer;
 }
 .alliance-generate:hover {
-    background-color: rgb(241, 41, 248);
+    background-color: rgb(107, 230, 134);
 }
 h4 {
     margin-right: 20px;
@@ -529,4 +542,206 @@ h4 {
 #alliance-a, #alliance-b, #alliance-c {
     display: flex;
     align-items: center;
+}
+
+
+/* =========== MEDIA QUERIES =========== */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        height: auto;
+    }
+    .fas.fa-bars {
+        position: absolute;
+        right: 50px;
+        top: 10px;
+        display: flex;
+        padding: 6px;
+        border: 1px solid white;
+        border-radius: 2px;
+        z-index: 10;
+    }
+    #desktop-menu {
+        display: none;
+    }
+    #mobile-menu {
+        display: flex;
+    }
+    #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #mobile-menu ul li {
+        padding: 8px 0;
+    }
+    #mobile-menu ul li {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: #222;
+    }
+    #header-fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        background-color: #222;
+        height: 50px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    header {
+        height: auto;
+    }
+    .fas.fa-bars {
+        position: absolute;
+        right: 50px;
+        top: 10px;
+        display: flex;
+        padding: 6px;
+        border: 1px solid white;
+        border-radius: 2px;
+        z-index: 10;
+    }
+    #desktop-menu {
+        display: none;
+    }
+    #mobile-menu {
+        display: flex;
+    }
+    #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #mobile-menu ul li {
+        padding: 8px 0;
+    }
+    #mobile-menu ul li {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: #222;
+    }
+    #header-fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        background-color: #222;
+        height: 50px;
+    }
+    .job-grid {
+        display: block;
+    }
+    .job-box {
+        margin-bottom: 20px;
+    }
+    .tanks, .healers, .dps {
+        width: 90%;
+        margin: auto;
+    }
+    #container-p {
+        width: 90%;
+    }
+    h1 {
+        width: 80%;
+        font-size: 2em;
+    }
+    #home {
+        height: 480%;
+    }
+    .potd-result, .light-result, .full-result, .alliance-result, #alliance-a, #alliance-b, #alliance-c {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .potd-content, .light-content, .full-content, .alliance-content {
+        height: auto;
+    }
+    .potd-header, .light-header, .full-header, .alliance-header {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 270px) and (max-width: 425px) {
+    header {
+        height: auto;
+    }
+    .fas.fa-bars {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: flex;
+        padding: 6px;
+        border: 1px solid white;
+        border-radius: 2px;
+        z-index: 10;
+    }
+    #desktop-menu {
+        display: none;
+    }
+    #mobile-menu {
+        display: flex;
+    }
+    #mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+    }
+    #mobile-menu ul li {
+        padding: 8px 0;
+    }
+    #mobile-menu ul li {
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+        background-color: #222;
+    }
+    #header-fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        background-color: #222;
+        height: 50px;
+    }
+    .job-grid {
+        display: block;
+    }
+    .job-box {
+        margin-bottom: 20px;
+    }
+    .tanks, .healers, .dps {
+        width: 90%;
+        margin: auto;
+    }
+    #container-p {
+        width: 90%;
+    }
+    h1 {
+        width: 80%;
+        font-size: 2em;
+    }
+    #home {
+        height: 480%;
+    }
+    .potd-box, .light-box, .full-box, .alliance-box{
+        width: 90%;
+        padding: 0;
+    }
+    #lightParty, #fullParty, #alliance {
+        padding: 80px 0;
+    }
+    .potd-result, .light-result, .full-result, .alliance-result, #alliance-a, #alliance-b, #alliance-c {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .potd-content, .light-content, .full-content, .alliance-content {
+        height: auto;
+    }
+    .potd-header, .light-header, .full-header, .alliance-header {
+        height: auto;
+    }
 }

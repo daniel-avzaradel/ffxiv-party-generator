@@ -1,3 +1,39 @@
+// mobile menu //
+
+const mobileMenu = document.querySelector('.fas.fa-bars')
+const mobileNav = document.querySelector('#mobile-menu')
+const headerFixed = document.querySelector('#header-fixed')
+const mobileLinks = document.querySelectorAll('#mobile-menu nav ul li a');
+
+mobileLinks.forEach(links => links.addEventListener("click", () => {
+    if (mobileNav.style.display === "none") {
+        mobileNav.style.display = "block";
+      } else {
+        mobileNav.style.display = "none";
+      }
+    if (mobileNav.style.display === "none") {
+        headerFixed.style.display = "block";
+      } else {
+        headerFixed.style.display = "none";
+      }
+}))
+
+mobileMenu.addEventListener("click", () => {
+    if (mobileNav.style.display === "none") {
+        mobileNav.style.display = "block";
+      } else {
+        mobileNav.style.display = "none";
+      }
+    if (mobileNav.style.display === "none") {
+        headerFixed.style.display = "block";
+      } else {
+        headerFixed.style.display = "none";
+      }
+})
+
+
+// jobs //
+
 const tanks = [
     {name: "Warrior", url: './img/war.png'}, 
     {name: "Paladin", url: './img/pld.png'}, 
