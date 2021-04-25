@@ -651,6 +651,9 @@ h4 {
     }
     #home {
         height: 500%;
+        background-image: url(../img/home-small.png);
+        background-repeat: repeat-y;
+        background-attachment: fixed;
     }
     .potd-result, .light-result, .full-result, .alliance-result, #alliance-a, #alliance-b, #alliance-c {
         display: flex;
@@ -727,6 +730,8 @@ h4 {
     #home {
         height: 500%;
         background-image: url(../img/home-small.png);
+        background-repeat: repeat-y;
+        background-attachment: fixed;
     }
     .potd-box, .light-box, .full-box, .alliance-box{
         width: 90%;
