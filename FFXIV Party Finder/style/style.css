@@ -609,7 +609,7 @@ h4 {
         display: none;
     }
     #mobile-menu {
-        display: flex;
+        display: none;
     }
     #mobile-menu ul {
         display: flex;
@@ -683,7 +683,7 @@ h4 {
         display: none;
     }
     #mobile-menu {
-        display: flex;
+        display: none;
     }
     #mobile-menu ul {
         display: flex;
@@ -726,6 +726,7 @@ h4 {
     }
     #home {
         height: 480%;
+        background-image: url(../img/home-small.png);
     }
     .potd-box, .light-box, .full-box, .alliance-box{
         width: 90%;
