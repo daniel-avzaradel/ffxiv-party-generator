@@ -608,9 +608,6 @@ h4 {
     #desktop-menu {
         display: none;
     }
-    #mobile-menu {
-        display: none;
-    }
     #mobile-menu ul {
         display: flex;
         flex-direction: column;
@@ -626,6 +623,7 @@ h4 {
     }
     #header-fixed {
         position: absolute;
+        display: flex;
         top: 0;
         left: 0;
         width: 100%;
@@ -633,6 +631,7 @@ h4 {
         background-color: #222;
         height: 50px;
     }
+    
     .job-grid {
         display: block;
     }
@@ -682,9 +681,6 @@ h4 {
     #desktop-menu {
         display: none;
     }
-    #mobile-menu {
-        display: none;
-    }
     #mobile-menu ul {
         display: flex;
         flex-direction: column;
@@ -698,8 +694,12 @@ h4 {
         width: 100vw;
         background-color: #222;
     }
+    #mobile-menu {
+        display: none;
+    }
     #header-fixed {
         position: absolute;
+        display: flex;
         top: 0;
         left: 0;
         width: 100%;

@@ -11,11 +11,6 @@ mobileLinks.forEach(links => links.addEventListener("click", () => {
       } else {
         mobileNav.style.display = "none";
       }
-    if (mobileNav.style.display === "none") {
-        headerFixed.style.display = "block";
-      } else {
-        headerFixed.style.display = "none";
-      }
 }))
 
 mobileMenu.addEventListener("click", () => {
@@ -23,11 +18,6 @@ mobileMenu.addEventListener("click", () => {
         mobileNav.style.display = "block";
       } else {
         mobileNav.style.display = "none";
-      }
-    if (mobileNav.style.display === "none") {
-        headerFixed.style.display = "block";
-      } else {
-        headerFixed.style.display = "none";
       }
 })
 
