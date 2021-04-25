@@ -1,0 +1,443 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: transparent;
+    scroll-behavior: smooth;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: transparent;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: #222;
+    box-sizing: border-box;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 0 10vw;
+    position: fixed;
+    z-index: 10;
+}
+
+header h2 {
+    font-size: 1.2em;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+header nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 8px 12px;
+    transition: 0.1s ease-in-out;
+}
+nav ul li a:hover {
+    background-color: #ccc;
+    color: #222;
+}
+
+#home {
+    position: absolute;
+    background-image: url('../img/home.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    width: 100%;
+    max-width: 100vw;
+    height: 500%;
+    z-index: -1;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+h1 {
+    font-size: 2.6em;
+    color: white;
+    text-align: center;
+}
+.container p {
+    color: #ccc;
+    font-size: 1.2em;
+}
+h1 span {
+    color: royalblue;
+}
+#jobs {
+    height: auto;
+    background-color: #ccc;
+}
+h3 {
+    color: #222;
+    font-size: 2em;
+    padding: 20px;
+}
+#jobs p {
+    color: #444;
+    font-size: 1.2em;
+}
+#jobs .container {
+    margin: auto;
+}
+#jobs .container h3 {
+    margin-top: 60px;
+}
+#container-p {
+    width: 800px;
+}
+
+.job-grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-bottom: 60px;
+}
+.tanks, .healers {
+    width: 23em;
+    margin: auto;
+    margin: 8px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.dps {
+    margin: auto;
+    margin: 10px;
+    box-sizing: border-box;
+    width: 750px;
+}
+
+.jobs-content {
+    box-sizing: border-box;
+    background-color: floralwhite;
+    color: #333;
+    height: auto;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: .8em;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+
+.jobs-content div {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.tanks .jobs-content {
+    color: rgb(22, 56, 158);
+}
+.healers .jobs-content {
+    color: rgb(17, 128, 17);
+}
+
+.tanks-header, .healers-header, .dps-header {
+    height: 40px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 4px 4px 0 0 ;
+}
+.tanks-header {
+    background-color:royalblue;
+}
+.healers-header {
+    background-color:rgb(17, 128, 17);
+}
+.dps-header {
+    background-color:rgb(146, 27, 27);
+}
+
+#jobs img {
+    width: 36px;
+    margin-right: 10px;
+}
+
+#dps1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.melee, .physr, .magicr {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+
+.transparent {
+    width: 100%;
+    height: 600px;
+    background-color: transparent;
+}
+
+
+
+/* =============== PALACE OF THE DEAD =================== */
+
+
+#potd {
+    margin-top: 120px;
+    background-color: #ccc;
+    height: 600px;
+    width: 100%;
+}
+
+.potd-box {
+    width: 60%;
+}
+
+.potd-header {
+    background-color: #222;
+    width: 800px;
+    height: 40px;
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 4px 4px 0 0 ;
+    margin: auto;
+}
+
+.potd-content {
+    width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: floralwhite;
+    color: #333;
+    height: 200px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: .8em;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.generate {
+    margin: 10px 14px;
+    border-radius: 4px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    background-color: #888;
+    transition: 0.2s ease all;
+    cursor: pointer;
+}
+.generate:hover {
+    background-color: #a3a3a3;
+}
+
+.potd-result {
+    margin: 10px 14px;
+    width: auto;
+    display: flex;
+    border: 1px solid;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #aedfc2;
+    align-items: center;
+    justify-content: flex-start;
+}
+.potd-result img {
+    width: 50px;
+    height: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* =============== LIGHT PARTY =================== */
+
+
+#lightParty {
+    margin-top: 120px;
+    background-color: #ccc;
+
+    height: auto;
+    width: 100%;
+    padding: 80px;
+}
+
+#lightParty h3 {
+    color: #333;
+}
+
+.light-box {
+    width: 60%;
+}
+
+.light-header {
+    background-color:rgb(218, 161, 19);
+    width: 800px;
+    height: 40px;
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    color: #222;
+    border-radius: 4px 4px 0 0 ;
+    margin: auto;
+}
+
+.light-content {
+    width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: floralwhite;
+    color: #333;
+    height: 200px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: .8em;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.light-result {
+    margin: 10px 14px;
+    width: auto;
+    display: flex;
+    border: 1px solid;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    align-items: center;
+    justify-content: flex-start;
+}
+.light-result img {
+    width: 50px;
+    height: auto;
+}
+
+.light-generate {
+    margin: 10px 14px;
+    border-radius: 4px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    background-color: darkgoldenrod;
+    transition: 0.2s ease all;
+    cursor: pointer;
+}
+.light-generate:hover {
+    background-color: goldenrod;
+}
+
+
+/* =============== FULL PARTY =================== */
+
+
+#fullParty {
+    margin-top: 120px;
+    background-color: #ccc;
+
+    height: auto;
+    width: 100%;
+    padding: 80px;
+}
+
+#fullParty h3 {
+    color: #333;
+}
+
+.full-box {
+    width: 60%;
+}
+
+.full-header {
+    background-color: rgb(22, 157, 190);
+    width: 800px;
+    height: 40px;
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    color: #222;
+    border-radius: 4px 4px 0 0 ;
+    margin: auto;
+}
+
+.full-content {
+    width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: floralwhite;
+    color: #333;
+    height: 200px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: .8em;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.full-result {
+    margin: 10px 14px;
+    width: auto;
+    display: flex;
+    border: 1px solid;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    align-items: center;
+    justify-content: flex-start;
+}
+.full-result img {
+    width: 50px;
+    height: auto;
+}
+
+.full-generate {
+    margin: 10px 14px;
+    border-radius: 4px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(8, 132, 163);
+    transition: 0.2s ease all;
+    cursor: pointer;
+}
+.full-generate:hover {
+    background-color: rgb(25, 179, 226);
+}

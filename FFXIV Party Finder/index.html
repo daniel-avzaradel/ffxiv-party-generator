@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+
+    <title>FFXIV PFG</title>
+</head>
+<body>
+    <header>
+        <h2>FFXIV PFG</h2>
+        <nav>
+            <ul>
+                <li><a href="#html">Home</a></li>
+                <li><a href="#jobs">Job Guide</a></li>
+                <li><a href="#potd">Palace of the Dead</a></li>
+                <li><a href="#lightParty">Light Party</a></li>
+                <li><a href="#fullParty">Full Party</a></li>
+                <li><a href="#alliance">Alliance Raid</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section id="home"> 
+        </section>
+
+        <section class="transparent">
+            <div class="container">
+                <h1>FINAL FANTASY XIV <br>PARTY FINDER GENERATOR</h1>
+                <p>by: Daniel Avzaradel</p>
+                </div>
+        </section>
+
+        <section id="jobs">
+            <div class="container">
+                <h3>JOB GUIDE</h3><br>
+                <p id="container-p">In FINAL FANTASY XIV, sufficient mastery of a class will open up the path to one or more related jobs and their respective actions.</p><br>
+
+            <div class="job-grid">
+                <div class="job-box">
+                    <div class="tanks">
+                        <div class="tanks-header">
+                            <img src="./img/tank.png" alt="Tank logo">
+                            <span>TANK</span>
+                        </div>
+                        <div class="jobs-content">
+                            <p>High in HP and trained in defense, a tank serves as the party's shield. Skilled at keeping a foe's attention and bearing the brunt of enemy attacks.</p>
+                            <br>
+                            <div><img src="./img/pld.png" alt="Paladin logo"> Paladin</div>
+                            <div><img src="./img/war.png" alt="Warrior logo"> Warrior</div>
+                            <div><img src="./img/dkn.png" alt="Dark Knight logo"> Dark Knight</div>
+                            <div><img src="./img/gnb.png" alt="Gunbreaker logo"> Gunbreaker</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="job-box">
+                    <div class="healers">
+                        <div class="healers-header">
+                            <img src="./img/healer.png" alt="">
+                            <span>HEALER</span>
+                        </div>
+                        <div class="jobs-content"> 
+                            <p>Healers use restorative arts to mend wounded companions. They can also help to mitigate damage, remove detrimental effects, and even bring fallen allies back to life.</p><br>
+                            <div><img src="./img/whm.png" alt="White Mage logo"> White Mage</div>
+                            <div><img src="./img/sch.png" alt="Scholar logo"> Scholar</div>
+                            <div><img src="./img/ast.png" alt="Astrologian logo"> Astrologian</div>
+                        </div>
+                        <div class="jobs-content"></div>
+                    </div>
+                </div>
+                <div class="job-box">
+                    <div class="dps">
+                        <div class="dps-header">
+                            <img src="./img/dps.png" alt="">
+                            <span>DPS (Damage-per-second)</span>
+                        </div>
+                        <div class="jobs-content">
+                            <p>These players are the ones to inflict high brute magical or physical damage onto their foes to bring them all down.</p><br>
+                            <div id="dps1">
+
+                            <div class="melee">
+                                <p>Melee Physical Dps</p><br>
+                                <div><img src="./img/mnk.png" alt="Monk logo"> Monk</div>
+                                <div><img src="./img/dgn.png" alt="Dragoon logo"> Dragoon</div>
+                                <div><img src="./img/njn.png" alt="Ninja logo"> Ninja</div>
+                                <div><img src="./img/smr.png" alt="Samurai logo"> Samurai</div>
+                            </div>
+
+                            <div class="physr">
+                                <p>Physical Ranged Dps</p><br>
+                                <div><img src="./img/brd.png" alt="Bard logo"> Bard</div>
+                                <div><img src="./img/mch.png" alt="Machinist logo"> Machinist</div>
+                                <div><img src="./img/dnc.png" alt="Ninja logo"> Dancer</div>
+                            </div>
+
+                            <div class="magicr">
+                                <p>Magical Ranged Dps</p><br>
+                                <div><img src="./img/blm.png" alt="Black Mage logo"> Black Mage</div>
+                                <div><img src="./img/smn.png" alt="Summoner logo"> Summoner</div>
+                                <div><img src="./img/rdm.png" alt="Red Mage logo"> Red Mage</div>
+                                <div><img src="./img/blu.png" alt="Blue Mage logo"> Blue Mage</div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section id="potd">
+            <div class="container">
+                <h3>PALACE OF THE DEAD</h3>
+                <div class="potd-box">
+                    <div class="potd-header">Palace of the Dead. Requirements: no requirements.</div>
+                    <div class="potd-content">
+                        <button class="generate" id="potd-btn">GENERATE:</button><br>
+                        <div class="potd-result">
+                            <img src="./img/rdm.png" alt="" class="result hidden">
+                            <img src="./img/pld.png" alt="" class="result hidden">
+                            <img src="./img/dgn.png" alt="" class="result hidden">
+                            <img src="./img/whm.png" alt="" class="result hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="lightParty">
+            <div class="container">
+                <h3>LIGHT PARTY</h3>
+                <div class="light-box">
+                    <div class="light-header">Light Paty. Requirements: 1 Tank, 1 Healer. 2 Dps.</div>
+                    <div class="light-content">
+                        <button class="light-generate" id="light-btn">GENERATE:</button><br>
+                        <div class="light-result">
+                            <img src="./img/rdm.png" alt="" class="result hidden">
+                            <img src="./img/pld.png" alt="" class="result hidden">
+                            <img src="./img/dgn.png" alt="" class="result hidden">
+                            <img src="./img/whm.png" alt="" class="result hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fullParty">
+            <div class="container">
+                <h3>FULL PARTY</h3>
+                <div class="full-box">
+                    <div class="full-header">Light Paty. Requirements: 2 Tanks, 2 Healers. 4 Dps.</div>
+                    <div class="full-content">
+                        <button class="full-generate" id="full-btn">GENERATE:</button><br>
+                        <div class="full-result">
+                            <img src="./img/rdm.png" alt="" class="result hidden">
+                            <img src="./img/pld.png" alt="" class="result hidden">
+                            <img src="./img/dgn.png" alt="" class="result hidden">
+                            <img src="./img/whm.png" alt="" class="result hidden">
+                            <img src="./img/rdm.png" alt="" class="result hidden">
+                            <img src="./img/pld.png" alt="" class="result hidden">
+                            <img src="./img/dgn.png" alt="" class="result hidden">
+                            <img src="./img/whm.png" alt="" class="result hidden">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./js/party.js"></script>
+</body>
+</html>
