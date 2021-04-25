@@ -56,12 +56,13 @@ const potd = document.getElementById('potd-btn')
 potd.addEventListener("click", () => {
 
     let potdResult = document.querySelectorAll('.potd-result img');
-    console.log(potdResult)
     
     for (let i=0; i < potdResult.length; i++) {
         potdResult[i].src = randomJob().url;
         potdResult[i].classList.remove('hidden');
     }
+    let potdBackground = document.querySelector('.potd-result');
+    potdBackground.style.backgroundColor = "lightseagreen";
 })
 
 const lightParty = document.getElementById('light-btn')
@@ -81,6 +82,8 @@ lightParty.addEventListener("click", () => {
             lightResult[i].classList.remove('hidden')
         }
     }
+    let lightBackground = document.querySelector('.light-result');
+    lightBackground.style.backgroundColor = "lightseagreen";
 })
 
 const fullParty = document.getElementById('full-btn')
@@ -100,4 +103,29 @@ fullParty.addEventListener("click", () => {
             fullResult[i].classList.remove('hidden')
         }
     }
-})
+    let fullBackground = document.querySelector('.full-result');
+    fullBackground.style.backgroundColor = "lightseagreen";
+});
+
+
+const alliance = document.getElementById('alliance-btn')
+
+alliance.addEventListener("click", () => {
+    let alliance = document.querySelectorAll('.alliance-result img');
+    let count = 0;
+
+    for (let i =0 ; i < alliance.length; i++) {
+        if  (i < 1 || i == 8 || i === 16) {
+            alliance[i].src = randomTank().url;
+            alliance[i].classList.remove('hidden')
+        } else if (i === 1 || i === 9 || i === 17) {
+            alliance[i].src = randomHealer().url;
+            alliance[i].classList.remove('hidden')
+        } else {
+            alliance[i].src = randomDps().url;
+            alliance[i].classList.remove('hidden')
+        }
+    }    
+    let allianceBackground = document.querySelectorAll('.alliance-result');
+    allianceBackground.forEach(background => {background.style.backgroundColor = "lightseagreen"; });
+});

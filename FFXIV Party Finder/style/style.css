@@ -254,12 +254,13 @@ h3 {
     padding: 14px 20px;
     border: none;
     outline: none;
-    background-color: #888;
+    background-color: #333;
     transition: 0.2s ease all;
     cursor: pointer;
+    color: white;
 }
 .generate:hover {
-    background-color: #a3a3a3;
+    background-color: #666;
 }
 
 .potd-result {
@@ -270,7 +271,7 @@ h3 {
     padding: 12px;
     box-sizing: border-box;
     border-radius: 4px;
-    background-color: #aedfc2;
+    background-color: white;
     align-items: center;
     justify-content: flex-start;
 }
@@ -440,4 +441,92 @@ h3 {
 }
 .full-generate:hover {
     background-color: rgb(25, 179, 226);
+}
+
+
+/* =============== ALLIANCE RAID =================== */
+
+
+#alliance {
+    margin-top: 120px;
+    background-color: #ccc;
+
+    height: auto;
+    width: 100%;
+    padding: 80px;
+}
+
+#alliance h3 {
+    color: #333;
+}
+
+.alliance-box {
+    width: 60%;
+}
+
+.alliance-header {
+    background-color: rgb(194, 67, 233);
+    width: 800px;
+    height: 40px;
+    padding: 2px 20px;
+    display: flex;
+    align-items: center;
+    color: #222;
+    border-radius: 4px 4px 0 0 ;
+    margin: auto;
+}
+
+.alliance-content {
+    width: 800px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: floralwhite;
+    color: #333;
+    height: auto;
+    font-family: sans-serif;
+    line-height: 1.5;
+    font-size: .8em;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.alliance-result {
+    margin: 10px 14px;
+    width: auto;
+    display: flex;
+    border: 1px solid;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: white;
+    align-items: center;
+    justify-content: flex-start;
+}
+.alliance-result img {
+    width: 50px;
+    height: auto;
+}
+
+.alliance-generate {
+    margin: 10px 14px;
+    border-radius: 4px;
+    padding: 14px 20px;
+    border: none;
+    outline: none;
+    background-color: rgb(194, 27, 172);
+    transition: 0.2s ease all;
+    cursor: pointer;
+}
+.alliance-generate:hover {
+    background-color: rgb(241, 41, 248);
+}
+h4 {
+    margin-right: 20px;
+}
+
+#alliance-a, #alliance-b, #alliance-c {
+    display: flex;
+    align-items: center;
 }
