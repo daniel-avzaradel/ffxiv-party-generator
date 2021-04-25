@@ -650,7 +650,7 @@ h4 {
         font-size: 2em;
     }
     #home {
-        height: 480%;
+        height: 500%;
     }
     .potd-result, .light-result, .full-result, .alliance-result, #alliance-a, #alliance-b, #alliance-c {
         display: flex;
@@ -725,7 +725,7 @@ h4 {
         font-size: 2em;
     }
     #home {
-        height: 480%;
+        height: 500%;
         background-image: url(../img/home-small.png);
     }
     .potd-box, .light-box, .full-box, .alliance-box{
