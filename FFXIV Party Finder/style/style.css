@@ -400,7 +400,7 @@ h3 {
 .full-header {
     background-color: rgb(22, 157, 190);
     max-width: 800px;
-    height: 40px;
+    height: auto;
     padding: 2px 20px;
     display: flex;
     align-items: center;
@@ -650,7 +650,7 @@ h4 {
         font-size: 2em;
     }
     #home {
-        height: 500%;
+        height: 550%;
         background-image: url(../img/home-small.png);
         background-repeat: repeat-y;
         background-attachment: fixed;
@@ -728,7 +728,7 @@ h4 {
         font-size: 2em;
     }
     #home {
-        height: 500%;
+        height: 550%;
         background-image: url(../img/home-small.png);
         background-repeat: repeat-y;
         background-attachment: fixed;
